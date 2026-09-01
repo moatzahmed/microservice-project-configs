@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: ${ROOM_DB_URL:jdbc:postgresql://localhost:5433/room_db}
+    username: ${ROOM_DB_USERNAME:room_user}
+    password: ${ROOM_DB_PASSWORD:room_password}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+logging:
+  pattern:
+    correlation: "[%X{correlationId:-no-correlation}] "

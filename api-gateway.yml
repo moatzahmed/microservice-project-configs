@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: room-service
+              uri: ${ROOM_SERVICE_URL:lb://room-service}
+              predicates:
+                - Path=/api/rooms/**
+            - id: booking-service
+              uri: ${BOOKING_SERVICE_URL:lb://booking-service}
+              predicates:
+                - Path=/api/bookings/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+  endpoint:
+    gateway:
+      access: read-only
+
