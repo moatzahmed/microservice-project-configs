@@ -4,8 +4,8 @@ server:
 spring:
   datasource:
     url: ${BOOKING_DB_URL:jdbc:postgresql://localhost:5434/booking_db}
-    username: ${BOOKING_DB_USERNAME:booking_user}
-    password: ${BOOKING_DB_PASSWORD:booking_password}
+    username: ${BOOKING_DB_USERNAME}
+    password: ${BOOKING_DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: validate

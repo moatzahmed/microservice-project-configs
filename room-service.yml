@@ -4,8 +4,8 @@ server:
 spring:
   datasource:
     url: ${ROOM_DB_URL:jdbc:postgresql://localhost:5433/room_db}
-    username: ${ROOM_DB_USERNAME:room_user}
-    password: ${ROOM_DB_PASSWORD:room_password}
+    username: ${ROOM_DB_USERNAME}
+    password: ${ROOM_DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: validate
