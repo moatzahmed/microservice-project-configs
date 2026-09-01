@@ -56,5 +56,3 @@ management:
     web:
       exposure:
         include: health,info,bulkheads,bulkheadevents,circuitbreakers,circuitbreakerevents,retries,retryevents
-hello:
-  world: good morning!
