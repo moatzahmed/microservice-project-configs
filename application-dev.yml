@@ -1,0 +1,13 @@
+info:
+  configuration:
+    profile: dev
+
+logging:
+  level:
+    com.learning.meetingrooms: DEBUG
+
+management:
+  endpoint:
+    health:
+      show-details: always
+

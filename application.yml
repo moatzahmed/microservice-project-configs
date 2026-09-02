@@ -14,4 +14,4 @@ management:
 
 info:
   configuration:
-    source: native-config-repository
+    source: git-config-repository

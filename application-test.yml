@@ -1,0 +1,12 @@
+info:
+  configuration:
+    profile: test
+
+eureka:
+  client:
+    enabled: false
+
+logging:
+  level:
+    com.learning.meetingrooms: WARN
+

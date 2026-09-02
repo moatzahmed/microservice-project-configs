@@ -1,0 +1,5 @@
+clients:
+  room-service:
+    connect-timeout: 3s
+    read-timeout: 5s
+
