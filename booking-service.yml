@@ -57,4 +57,4 @@ management:
       exposure:
         include: health,info,busrefresh,bulkheads,bulkheadevents,circuitbreakers,circuitbreakerevents,retries,retryevents
 test:
-  message: "Hi spring cloud bus"
+  message: "Hi spring cloud bus once again"
