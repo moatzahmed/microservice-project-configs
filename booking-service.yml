@@ -55,4 +55,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,bulkheads,bulkheadevents,circuitbreakers,circuitbreakerevents,retries,retryevents
+        include: health,info,busrefresh,bulkheads,bulkheadevents,circuitbreakers,circuitbreakerevents,retries,retryevents
