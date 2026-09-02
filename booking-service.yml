@@ -56,3 +56,5 @@ management:
     web:
       exposure:
         include: health,info,busrefresh,bulkheads,bulkheadevents,circuitbreakers,circuitbreakerevents,retries,retryevents
+test:
+  message: "Test message"
