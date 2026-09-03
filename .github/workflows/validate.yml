@@ -1,0 +1,33 @@
+name: Validate configuration
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate YAML
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out configuration
+        uses: actions/checkout@v6
+
+      - name: Parse every YAML file
+        shell: ruby {0}
+        run: |
+          require "yaml"
+
+          files = Dir.glob("*.{yml,yaml}").sort
+          abort "No YAML configuration files found" if files.empty?
+
+          files.each do |file|
+            YAML.parse_file(file)
+            puts "Valid: #{file}"
+          end
