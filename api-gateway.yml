@@ -4,15 +4,31 @@ server:
 spring:
   security:
     oauth2:
+      client:
+        registration:
+          keycloak:
+            client-id: new-meeting-room-client
+            client-secret: mz4hcf4id9QKWUN76Q0waeiPQe50hsUJ
+            authorization-grant-type: authorization_code
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            scope: openid, profile, email
+        provider:
+          keycloak:
+            issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8180/realms/new-meeting-room}
+
       resourceserver:
         jwt:
-          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8180/realms/meeting-room}
+          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8180/realms/new-meeting-room}
+
   data:
     redis:
       host: ${REDIS_HOST:localhost}
       port: ${REDIS_PORT:6379}
+
   cloud:
     gateway:
+      default-filters:
+        - TokenRelay
       server:
         webflux:
           routes:

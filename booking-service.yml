@@ -6,7 +6,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8180/realms/meeting-room}
+          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8180/realms/new-meeting-room}
   datasource:
     url: ${BOOKING_DB_URL:jdbc:postgresql://localhost:5434/booking_db}
     username: ${BOOKING_DB_USERNAME}
