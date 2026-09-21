@@ -2,6 +2,8 @@ server:
   port: 8082
 
 spring:
+  application:
+    name: booking-service
   security:
     oauth2:
       resourceserver:
