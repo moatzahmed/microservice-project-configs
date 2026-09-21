@@ -8,7 +8,7 @@ spring:
         registration:
           keycloak:
             client-id: new-meeting-room-client
-            client-secret: mz4hcf4id9QKWUN76Q0waeiPQe50hsUJ
+            client-secret: BqIETzlCkEylMqAGKnwdD2rcMJP55J6Y
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
             scope: openid, profile, email
