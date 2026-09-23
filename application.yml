@@ -1,3 +1,6 @@
+server:
+  port: 8888
+
 eureka:
   client:
     service-url:
@@ -9,7 +12,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,busrefresh
+        include: health,info,busrefresh,monitor
   info:
     env:
       enabled: true
@@ -19,6 +22,15 @@ info:
     source: git-config-repository
 
 spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/moatzahmed/microservice-project-configs.git
+          clone-on-start: true
+          default-label: main 
   rabbitmq:
     host: ${RABBITMQ_HOST:localhost}
     port: ${RABBITMQ_PORT:5672}
