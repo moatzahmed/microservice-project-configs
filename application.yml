@@ -42,6 +42,3 @@ test:
   feature-flag: true
   max-connections: 150
 
-encrypt:
-  key: "MySuperSecretKey123456789" # اختر أي نص سري
-
