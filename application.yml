@@ -38,7 +38,7 @@ spring:
     password: ${RABBITMQ_PASSWORD:guest}
 
 test:
-  message: "eh fe eeeeh"
+  message: "eh fe eeeeh???????????????"
   encrypted-message: {cipher}9aa7b4838a3f6f12165577623976759628eb494ae51d03c2d1c0bdc360b55ef4
   feature-flag: true
   max-connections: 150
