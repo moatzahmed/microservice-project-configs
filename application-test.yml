@@ -10,11 +10,7 @@ logging:
   level:
     com.learning.meetingrooms: WARN
 
-name:
-  -moatz
-  -ahmed
-  -abdelmoneam
-
-onceagain:
-  - hi webhook
-  - without webhook
+test:
+  message: "Hello from Git Repository - Version 1"
+  feature-flag: true
+  max-connections: 150
