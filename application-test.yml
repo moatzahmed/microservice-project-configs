@@ -11,6 +11,6 @@ logging:
     com.learning.meetingrooms: WARN
 
 test:
-  message: "Hello from Git Repository - Version 1.1"
+  message: "Hello from Git Repository - Version 2"
   feature-flag: true
   max-connections: 150

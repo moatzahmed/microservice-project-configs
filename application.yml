@@ -38,6 +38,6 @@ spring:
     password: ${RABBITMQ_PASSWORD:guest}
 
 test:
-  message: "Hello from Git Repository - Version 1.1"
+  message: "Hello from Git Repository - Version 1.3"
   feature-flag: true
   max-connections: 150
