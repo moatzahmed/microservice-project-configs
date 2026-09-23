@@ -10,3 +10,7 @@ logging:
   level:
     com.learning.meetingrooms: WARN
 
+name:
+  -moatz
+  -ahmed
+  -abdelmoneam
