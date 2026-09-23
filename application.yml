@@ -12,7 +12,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,busrefresh,monitor
+        include: health,info,busrefresh,monitor,encrypt,decrypt
   info:
     env:
       enabled: true
@@ -41,3 +41,7 @@ test:
   message: "Hello from Git Repository - Version 1.5"
   feature-flag: true
   max-connections: 150
+
+encrypt:
+  key: "MySuperSecretKey123456789" # اختر أي نص سري
+
