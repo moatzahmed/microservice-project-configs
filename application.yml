@@ -36,3 +36,8 @@ spring:
     port: ${RABBITMQ_PORT:5672}
     username: ${RABBITMQ_USERNAME:guest}
     password: ${RABBITMQ_PASSWORD:guest}
+
+test:
+  message: "Hello from Git Repository - Version 1.1"
+  feature-flag: true
+  max-connections: 150
